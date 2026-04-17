@@ -1,0 +1,67 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background: #1a1a2e;
+  border-bottom: 2px solid #e94560;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.app-title {
+  font-size: 1.4rem;
+  color: #e94560;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-link {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+  color: #aac;
+}
+
+.nav-link:hover {
+  background: #0f3460;
+}
+
+.nav-link.active {
+  background: #e94560;
+  color: #fff;
+}
+
+.app-main {
+  flex: 1;
+  padding: 2rem 1.5rem;
+}
+
+.app-footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: #556;
+  font-size: 0.85rem;
+  border-top: 1px solid #1a1a2e;
+}

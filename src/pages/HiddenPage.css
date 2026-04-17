@@ -1,0 +1,28 @@
+.hidden-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hidden-title {
+  color: #e94560;
+  margin: 0 0 0.5rem;
+}
+
+.hidden-subtitle {
+  color: #8899aa;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.5rem;
+}
+
+.page-status {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+  color: #8899aa;
+}
