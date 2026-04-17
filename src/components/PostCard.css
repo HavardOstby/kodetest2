@@ -1,0 +1,150 @@
+.post-card {
+  background: #16213e;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.post-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(233, 69, 96, 0.2);
+}
+
+.post-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.post-content {
+  padding: 1.25rem;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-title {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #eee;
+  text-transform: capitalize;
+  flex: 1;
+}
+
+.danger-badge {
+  white-space: nowrap;
+  padding: 0.25rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.danger-badge.low {
+  background: #2d6a4f;
+  color: #b7e4c7;
+}
+
+.danger-badge.medium {
+  background: #e76f51;
+  color: #fff;
+}
+
+.danger-badge.high {
+  background: #e94560;
+  color: #fff;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.post-author {
+  margin: 0.25rem 0 0.75rem;
+  font-size: 0.85rem;
+  color: #8899aa;
+}
+
+.post-body {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #ccc;
+  margin: 0 0 1rem;
+}
+
+.post-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn-action {
+  background: #e94560;
+  color: #fff;
+}
+
+.btn-action:hover {
+  background: #c73e54;
+}
+
+.btn-comments {
+  background: #0f3460;
+  color: #aac;
+}
+
+.btn-comments:hover {
+  background: #1a4a80;
+}
+
+.comments-section {
+  margin-top: 1rem;
+  border-top: 1px solid #1a3055;
+  padding-top: 0.75rem;
+}
+
+.comment {
+  margin-bottom: 0.75rem;
+  padding: 0.5rem;
+  background: #0f3460;
+  border-radius: 6px;
+}
+
+.comment-author {
+  margin: 0 0 0.25rem;
+  font-size: 0.8rem;
+  color: #e94560;
+  font-weight: 600;
+}
+
+.comment-body {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #bbb;
+}
+
+.loading-text {
+  color: #8899aa;
+  font-style: italic;
+  font-size: 0.9rem;
+}
