@@ -1,0 +1,27 @@
+.home-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.results-count {
+  color: #8899aa;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.5rem;
+}
+
+.page-status {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+  color: #8899aa;
+}
+
+.page-status.error {
+  color: #e94560;
+}

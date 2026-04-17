@@ -1,35 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Posts Viewer</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>kodetest2</title>
   </head>
   <body>
-    <header>
-      <h1>Posts Viewer</h1>
-      <p class="subtitle">Fetching posts from JSONPlaceholder</p>
-    </header>
-
-    <main>
-      <div class="controls">
-        <input
-          type="search"
-          id="search"
-          placeholder="Search posts by title or body…"
-          aria-label="Search posts"
-        />
-        <select id="user-filter" aria-label="Filter by user">
-          <option value="">All users</option>
-        </select>
-      </div>
-
-      <p id="status" aria-live="polite"></p>
-
-      <ul id="posts-list" class="posts-list" aria-label="Posts"></ul>
-    </main>
-
-    <script src="app.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
